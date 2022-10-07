@@ -14,14 +14,14 @@ const router = event =>{
 }
 
 const routes = {
-    '/docs/': '/docs/home.html',
-    '/docs/book': '/docs/book.html',
-    '/docs/basket': '/docs/basket.html'
+    './docs/': './docs/home.html',
+    './docs/book': './docs/book.html',
+    './docs/basket': './docs/basket.html'
 }
 
 const renderHtml = async () =>{
     let path = window.location.pathname;
-    let route = routes[path] || routes['/docs/'];
+    let route = routes[path] || routes['./docs/'];
     let fetchHtml = await fetch(route);
     let html = await fetchHtml.text();
     document.querySelector('.root').innerHTML = html;
@@ -34,13 +34,13 @@ let homeStuff = new Home();
 const checkPageLogic = ()=>{
 
     let path = window.location.pathname;
-    if(path === '/docs/' || path === '/docs/index.html'){
+    if(path === './docs/' || path === './docs/index.html'){
         homeStuff.HomeLogic();
     }
-    else if(path === '/docs/book'){
+    else if(path === './docs/book'){
         bookStuff.BookLogic(homeStuff.selectedBook,totalAddedBooks);
     }
-    else if(path === '/docs/basket'){
+    else if(path === './docs/basket'){
         basketStuff.renderBasketBook(bookStuff.addToBasketBooks,bookStuff.basketBooks);
     }
 }
