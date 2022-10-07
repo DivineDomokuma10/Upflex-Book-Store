@@ -1,0 +1,20 @@
+@media (orientation: portrait) {
+    header{
+        width: 22%;
+    }
+    .nav-other-itms{
+        width: 60%;
+    }
+    .items{
+        font-size: 15px;
+    }
+    .view-basket{
+    width: 50%;
+    height: 100%;
+    }
+    .view-basket a{
+        color: white;
+        font-weight: 500;
+        font-size: 15px;
+    }
+}

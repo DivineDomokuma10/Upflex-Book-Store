@@ -1,0 +1,77 @@
+main{
+    width: 100%;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+}
+main a{
+    width: 30%;
+    padding: 6px;
+    margin-left: 30px;
+    font-size: 17px;
+    color: black;
+    font-weight: 500;
+}
+main h2{
+    text-align: center;
+}
+section{
+    width: 80%;
+    padding: 10px;
+    margin-left: 100px;
+}
+.book-con{
+    width: 50%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.book-main-con{
+    width: 50%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.519)
+}
+.book-main-con h2{
+    padding:10px ;
+}
+.quantity-removebtn-con{
+    width: 40%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.remove{
+    width: 80%;
+    height: 45px;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(76, 111, 217);
+}
+.remove:hover{
+    background-color: rgb(31, 76, 211);
+}
+.pay{
+    width: 17%;
+    height: 42px;
+    border: none;
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+    border-radius: 7px;
+    margin: 20px 0 0 20%;
+    background-color: rgb(76, 111, 217);
+}
+.pay:hover{
+    background-color: rgb(31, 76, 211);
+}
+
+

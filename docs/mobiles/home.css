@@ -1,0 +1,48 @@
+@media(orientation: portrait){
+    main header{
+        width: 98%;
+        padding: 1px;
+        margin-left: 10px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    main header p{
+        font-size: 17px;
+    }
+    article{
+        width: 90%;
+        margin-left: 0px;
+        line-height: 15px;
+        font-size: 14px;
+    }
+    aside{
+        width: 98%;
+        flex-direction: column;
+    }
+    aside img{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .book-shelf{
+        width: 98%;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    .shelf-book{
+        padding: 2px;
+    }
+    .shelf-book a{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .shelf-book p{
+        padding: 15px;
+        margin-top: 12px;
+    }
+    footer img{
+        width: 30%;
+    }
+}
+

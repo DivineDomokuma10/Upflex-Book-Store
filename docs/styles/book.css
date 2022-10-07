@@ -1,0 +1,70 @@
+main{
+    width: 100%;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+}
+main a{
+    width: 30%;
+    padding: 6px;
+    margin-left: 30px;
+    font-size: 17px;
+    color: black;
+    font-weight: 500;
+    
+}
+section{
+    width: 100%;
+    padding: 20px;
+}
+.book-details-con{
+    width: 40%;
+    margin-left: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.book-details{
+    width: 60%;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;  
+    display: flex;
+    flex-direction: column;  
+    border: 1px solid rgba(0, 0, 0, 0.63);
+}
+.img-con img{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;  
+}
+.info{
+    width: 100%;
+    padding: 20px;
+}
+.info h3{
+    width: 100%;
+    padding: 5px;
+}
+.info p{
+    width: 100%;
+    padding: 5px;
+}
+.add-to-basket{
+    width: 35%;
+    height: 45px;
+    /* position: fixed; */
+    left: 25%;
+    margin-top: 80%;
+    background-color: rgb(76, 111, 217);
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+}
+.add-to-basket:hover{
+    background-color: rgb(31, 76, 211);
+}
+
+

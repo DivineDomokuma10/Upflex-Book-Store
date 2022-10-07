@@ -1,0 +1,21 @@
+@media(orientation: portrait){
+    main a{
+        margin-left: 5px;   
+    }
+    .book-details-con{
+        width: 100%;
+        margin-left: 18px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .book-details{
+        width: 95%;
+    }
+    .add-to-basket{
+        width: 50%;
+        position: fixed;
+        left: 27%;
+        top: 50%;
+    }
+}
