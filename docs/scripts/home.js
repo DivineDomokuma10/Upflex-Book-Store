@@ -12,7 +12,7 @@ export default class Home{
         data.forEach( i => {
             document.querySelector('.book-shelf').innerHTML += 
             ` <div class="shelf-book">
-                <a href="/docs/book" onclick="router()">${i.title}</a>
+                <a href="/upflex-book-store/book" onclick="router()">${i.title}</a>
                 <p>${i.metaDescription}</p>
             </div>`
             this.bookShelfArr.push(i);

@@ -14,14 +14,14 @@ const router = event =>{
 }
 
 const routes = {
-    './docs/': './docs/home.html',
-    './docs/book': './docs/book.html',
-    './docs/basket': './docs/basket.html'
+    '/upflex-book-store': '/upflex-book-store/home.html',
+    '/upflex-book-store/book': '/upflex-book-store/book.html',
+    '/upflex-book-store/basket': '/upflex-book-store/basket.html'
 }
 
 const renderHtml = async () =>{
     let path = window.location.pathname;
-    let route = routes[path] || routes['./docs/'];
+    let route = routes[path] || routes['/upflex-book-store'];
     let fetchHtml = await fetch(route);
     let html = await fetchHtml.text();
     document.querySelector('.root').innerHTML = html;
@@ -34,13 +34,13 @@ let homeStuff = new Home();
 const checkPageLogic = ()=>{
 
     let path = window.location.pathname;
-    if(path === './docs/' || path === './docs/index.html'){
+    if(path === '/upflex-book-store' || path === '/upflex-book-store/index.html'){
         homeStuff.HomeLogic();
     }
-    else if(path === './docs/book'){
+    else if(path === '/upflex-book-store/book'){
         bookStuff.BookLogic(homeStuff.selectedBook,totalAddedBooks);
     }
-    else if(path === './docs/basket'){
+    else if(path === '/upflex-book-store/basket'){
         basketStuff.renderBasketBook(bookStuff.addToBasketBooks,bookStuff.basketBooks);
     }
 }
