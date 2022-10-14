@@ -14,9 +14,9 @@ const router = event =>{
 }
 
 const routes = {
-    '/upflex-book-store': '/upflex-book-store/home.html',
-    '/upflex-book-store/book': '/upflex-book-store/book.html',
-    '/upflex-book-store/basket': '/upflex-book-store/basket.html'
+    '/upflex-book-store': './docs/home.html',
+    '/upflex-book-store/book': './docs/book.html',
+    '/upflex-book-store/basket': '/./docs/basket.html'
 }
 
 const renderHtml = async () =>{
@@ -34,7 +34,7 @@ let homeStuff = new Home();
 const checkPageLogic = ()=>{
 
     let path = window.location.pathname;
-    if(path === '/upflex-book-store' || path === '/upflex-book-store/index.html'){
+    if(path === '/upflex-book-store' || path === './docs/index.html'){
         homeStuff.HomeLogic();
     }
     else if(path === '/upflex-book-store/book'){
